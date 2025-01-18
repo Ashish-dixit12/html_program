@@ -1,7 +1,180 @@
+<!--<html>
+    <body>
+        <script type="text/JavaScript">
+         var a=10;
+         document.write("a value is="+a);
+        </script>
+    </body>
+</html>
+
 <html>
     <body>
         <script type="text/JavaScript">
-            document.write("Welcome to JavaScript code ")
+         var a=10;
+         document.write("a value is="+a+"<br>");
+         var b=20;
+         document.writeln("b value is="+b+"<br>");
+         document.write("sum of the 2 values is="+(a+b))
         </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <script type="text/JavaScript">
+         var a=pareseInt(prompt('enter a value'));
+         document.write('a value is '+a);
+         var b=parseInt(prompt("enter b value"));
+         doucment.write('b value is'+ b +"<br>");
+         document.write("sum of both values is "+(a+b))
+        </script>
+    </body>
+</html>
+
+
+
+<html>
+    <body>
+        <script type="text/JavaScript">
+         var a=10;
+         document.write("a value is="+a+"<br>");
+         var b=20;
+         document.writeln("b value is="+b+"<br>");
+         if(a>b){
+            document.write("a is greater")
+         }
+         else{
+            document.write("b is greater")
+         }
+
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <script type="text/JavaScript">
+        var a=parseInt(prompt("Enter a value"));
+        document.write("a value is="+a+"<br>");
+        var b=parseInt(prompt("Enter b value"));
+        document.write("b value is="+b+"<br>");
+        var c=parseInt(prompt("Enter c value"));
+        document.write("c value is="+c+"<br>")
+        if(a>b){
+            if(a>c){
+                document.write("a is greater")
+            }
+            else{
+                document.write("c is greater")
+            }
+        }
+        else{
+            if(b>c){
+                document.write("b is greater")
+            }
+            else{
+                document.write("c is greater")
+            }
+        }
+        </script>    </body>
+</html>
+
+<html>
+    <body>
+        <script type="text/Javascript">
+            document.write("Welcome to Vasantdada Patil"+"<br>");
+            document.write("Welcome to Javascript coding"+"<br>");
+            var a=10;
+            document.write("a value is="+a+"<br>");
+            var b=20;
+            document.write("b value is=" b+"<br>");
+            var c=parseInt(prompt("Enter variable value "));
+            document.write("Hence c value is="+c+"<br>");
+            document.write("Multiplication of two values is"+(a*b)"+<br>");
+            if(a>b)
+            {
+               if(a>c){
+                document.write("a is greater")
+               }
+              else{
+                document.write("c is greater")
+               }
+         }
+         else{
+            if(b>c){
+                document.write("b is greater")
+            }
+            else{
+                document.write("c is greater")
+            }
+         }
+            for(var i=1;i<=10;i++){
+                document.write("5*"+i+"="+5*i+<"br">)
+            }
+        </script>
+    </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        function validate(){
+            var username = document.myform.username.value;
+           // document.write(username)
+            var password = document.myform.password.value;
+            //document.write(password)
+
+            if(username==="vishalmejari"&& password==="12345"){
+                document.write("login is sucess")
+               }
+               else
+               {
+                document.write("Login is failed")
+               }
+
+        }
+    </script>
+</head>
+<body>
+    <form name="myform" method="post" onsubmit="validate()">
+       username:<input type="text" name="username"><br>
+       Password:<input type="password" name="password">
+       <input type="submit" value="submit"> 
+    </form>    
+</body>
+</html>
+
+<html>
+    <head>
+        <script type="text/javascript">
+            function validate(){
+                var UserName=document.myform.username.value;              
+                var PassWord=document.myform.pwd.value;
+             if(UserName===""&& PassWord==="")
+             {
+            document.write("Please enter your username & password")
+             }
+             else if(PassWord.length<8){            
+                document.write("Please enter above 8 character password")
+             }
+             else if(UserName==="Ashish D ixit" && PassWord==="12345678")
+             {
+                document.write("Login is success")
+             }
+             else{
+                document.write("login is failed")
+             }              
+
+            }
+        </script>
+    </head>
+    <body>
+    <form name="myform" method="post" onsubmit="validate()">
+    UserName:<input type="text" name="username"/><br>
+    PassWord:<input type="password" name="pwd"/><br><br>
+    <input type="submit" value="submit"/>   
+    </form>
     </body>
 </html>
